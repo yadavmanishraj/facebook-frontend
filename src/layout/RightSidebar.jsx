@@ -1,4 +1,7 @@
 import React from "react";
+import search from "../assets/icons/search.svg";
+import options from "../assets/icons/options.svg";
+import ToolTip from "../components/ToolTip";
 
 const FreindRequestCard = () => {
   return (
@@ -21,7 +24,7 @@ const FreindRequestCard = () => {
           <span className="text-xs text-gray-500">1 Mutual Friend</span>
         </div>
         <div className="flex justify-stretch gap-4 mt-2">
-          <button className="rounded-md bg-blue-700 px-4 py-2 text-white font-semibold">
+          <button className="rounded-md bg-accent px-4 py-2 text-white font-semibold">
             Confirm
           </button>
           <button className="rounded-md bg-gray-100 px-4 py-2 text-black font-semibold">
@@ -54,7 +57,21 @@ const RightSidebar = () => {
       <FreindRequestCard />
       <hr className="border-gray-300 block my-3 mx-2" />
       <div className="contacts">
-        <div className="font-semibold text-md text-gray-500 px-2">Contacts</div>
+        <div className="flex justify-between font-semibold text-md text-gray-500 px-2">
+          <span>Contacts</span>
+          <div className="flex">
+            <ToolTip label={"Search by names or group"}>
+              <button className="p-2 rounded-full hover:bg-gray-200">
+                <img src={search} />
+              </button>
+            </ToolTip>
+            <ToolTip label={"Options"}>
+              <button className="p-2 rounded-full hover:bg-gray-200">
+                <img src={options} />
+              </button>
+            </ToolTip>
+          </div>
+        </div>
         <div className="  item flex gap-2 items-center px-1 py-2 transition rounded-md w-full hover:bg-gray-200 cursor-pointer">
           <div className="flex relative">
             <div className="absolute size-3 flex items-center justify-center bg-white rounded-full bottom-0 right-0">

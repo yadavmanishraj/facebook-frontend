@@ -15,7 +15,7 @@ const Story = ({ image, avatarImage, user }) => {
       <div className="one z-50 absolute flex flex-col justify-between h-full">
         <div className="p-2">
           <img
-            className="rounded-full object-cover size-10 border-avatar border-blue-600"
+            className="rounded-full object-cover size-10 border-avatar border-accent"
             src={`${
               avatarImage ??
               "https://scontent.fjkr2-1.fna.fbcdn.net/v/t39.30808-1/292763222_160789169824631_7475684149631828962_n.jpg?stp=c21.0.200.200a_dst-jpg_p200x200&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=HOI6gv4GSvQQ7kNvgH6DXnq&_nc_ht=scontent.fjkr2-1.fna&oh=00_AYCiCIl4odKShcYKiMvO0s1Ob9QDao5lQlzjJOeAi_Ztcg&oe=667C4EAF"

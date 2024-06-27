@@ -3,6 +3,19 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontSize: {
+        label: "15px",
+      },
+      colors: {
+        accent: "#0866FF",
+        accentGreen: "#31a24c",
+        live: "#f45f16",
+        backgroundDark: "#18191A",
+        onBackgroundDark: "#E7E9ED",
+        primaryContainerDark: "#242526",
+        onPrimaryContainerDark: "#E3E5EA",
+        onSecondaryContainerDark: "#A7A9AE",
+      },
       fontFamily: {
         sans: "Inter",
       },
@@ -13,7 +26,7 @@ export default {
           "url('https://static.xx.fbcdn.net/rsrc.php/v3/yw/r/0uJRGjrhtZ5.png')",
       },
       backgroundPosition: {
-        friend: "0 -262px",
+        friend: "0 -259px",
         favorite: "0 0",
         industries: "0 -190px",
         marketplace: "0 -370px",
@@ -32,6 +45,15 @@ export default {
       backgroundColor: {
         storyOverlay: "rgba(0, 0, 0, 0.2)",
         storyOverlayHover: "rgba(0, 0, 0, 0)",
+      },
+      gradientColorStops: {
+        2: "2%",
+      },
+      borderWidth: {
+        1: "3px",
+      },
+      spacing: {
+        50: "50%",
       },
     },
   },
